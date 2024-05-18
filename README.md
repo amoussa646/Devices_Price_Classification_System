@@ -19,7 +19,7 @@ To run the system:
     it will run on host='0.0.0.0', port=9090
 
 
-    after running the system one can test all the endpoints via this postman's workspace:
+    after running the system one can test all the endpoints via this postman's collection:
     
     https://dark-zodiac-10977.postman.co/workspace/New-Team-Workspace~6d6ae33d-d2ac-4e52-abfb-52cb76420a04/collection/24547724-bb12d19c-9c4a-4b59-9eee-34b418acc880?action=share&creator=24547724
 
