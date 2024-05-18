@@ -33,6 +33,15 @@ public class DeviceService {
         return deviceRepository.saveAndFlush(device);
     }
 
+    // to delete a device by Id
+    public boolean deleteDeviceById(Long id) {
+        if (deviceRepository.existsById(id)) {
+            deviceRepository.deleteById(id);
+            return true;
+        }
+        return false;
+    }
+
     // to update a device's price
     public Device updateDevicePrice(Long id, int priceRange) {
         Device device = getDeviceById(id);
