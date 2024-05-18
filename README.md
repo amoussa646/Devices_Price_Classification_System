@@ -25,6 +25,7 @@ To run the system:
 
     
 The first 10 devices in the test.csv are already added and their respective price_ranges are predicted and saved to their entities
+Their pridected price_ranges are : 0, 0, 2, 1, 1, 0, 2, 2, 1, 0
 
 
 End points :
