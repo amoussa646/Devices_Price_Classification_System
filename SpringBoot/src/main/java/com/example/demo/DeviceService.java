@@ -25,7 +25,7 @@ public class DeviceService {
 
     // to get device by Id
     public Device getDeviceById(Long id) {
-        return deviceRepository.getById(id);
+        return deviceRepository.findById(id).orElse(null);
     }
 
     // to save a device
