@@ -1,6 +1,6 @@
 Devices Price Classification System:
 
-Devices Price Classification System using Python, Flask and Spring Boot.
+    Devices Price Classification System using Python, Flask and Spring Boot.
 
 To run the system:
 
@@ -11,7 +11,7 @@ To run the system:
       python predictor.py 
       
     it will run on host='0.0.0.0', port=7000
-9090
+
   Spring Boot:  
       cd SpringBoot
       ./gradlew bootRun
@@ -19,6 +19,11 @@ To run the system:
     it will run on host='0.0.0.0', port=9090
 
 
+    after running the system one can test all the endpoints via this postman's workspace:
+    
+    https://dark-zodiac-10977.postman.co/workspace/New-Team-Workspace~6d6ae33d-d2ac-4e52-abfb-52cb76420a04/collection/24547724-bb12d19c-9c4a-4b59-9eee-34b418acc880?action=share&creator=24547724
+
+    
 The first 10 devices in the test.csv are already added and their respective price_ranges are predicted and saved to their entities
 
 
@@ -47,13 +52,16 @@ End points :
   "touchScreen": false,
   "wifi": true
 }
-    adds this device to the database (you can specify an id)
+    adds this device to the database 
 
   GET request: http://localhost:9090/api/devices
     gets all the devices
 
   GET request: http://localhost:9090/api/devices/10
     gets the device with id 10
+
+  DELETE request: http://localhost:9090/api/devices/10
+    deletes the device with id 10  
 
   POST request: http://localhost:9090/api/devices/predict/10
     predicts the price range of device with id 10
